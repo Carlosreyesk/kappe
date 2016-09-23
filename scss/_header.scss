@@ -1,0 +1,29 @@
+.nav{
+
+}
+.nav-item, .list-item{
+    text-transform: uppercase;
+    font-size: em(14);
+}
+.nav-item{
+    padding: em(38) 0;
+    color: $dark-font-color;
+    margin: 0 em(20);
+}
+.nav-item--selected, .nav-item:hover{
+    color: $primary-color;
+    border-bottom: em(5) solid $primary-color;
+}
+.list{
+
+}
+.list-items{
+    color: $main-font-color;
+    margin: em(16) 0;
+}
+.list:first-child{
+    margin-top:0;
+}
+.list:last-child{
+    margin-bottom:0;
+}
