@@ -1,0 +1,15 @@
+@import "variables";
+@import "functions";
+@import "icons";
+@import "fonts";
+@import "typography";
+@import "layouts";
+@import "buttons";
+@import "header";
+@import "navs";
+@import "sections";
+
+body { 
+  margin: 0;
+  color: $main-font-color;
+}
