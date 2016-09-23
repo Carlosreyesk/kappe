@@ -1,3 +1,5 @@
+// Navbar navegation
+
 .nav{
 
 }
@@ -13,17 +15,4 @@
 .nav-item--selected, .nav-item:hover{
     color: $primary-color;
     border-bottom: em(5) solid $primary-color;
-}
-.list{
-
-}
-.list-items{
-    color: $main-font-color;
-    margin: em(16) 0;
-}
-.list:first-child{
-    margin-top:0;
-}
-.list:last-child{
-    margin-bottom:0;
 }

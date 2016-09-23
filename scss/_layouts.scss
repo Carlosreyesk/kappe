@@ -1,6 +1,13 @@
-.layout-background{
+// Layout styles
+
+.layout-light-background{
     background: $main-background-color;
 }
 .layout-card{
     background: $light-background-color;
+    margin:10px;
 }
+.layout-dark-background{
+    background: $dark-background-color;
+}
+
