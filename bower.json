@@ -1,0 +1,17 @@
+{
+  "name": "kappe",
+  "homepage": "https://github.com/Carlosreyesk/kappe",
+  "authors": [
+    "carlosreyesk <carlosreyesk@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
