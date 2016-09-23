@@ -1,0 +1,16 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+@import "fonts";
+@import "sprites";
+@import "header";
+@import "content";
+@import "footer";
+@import "inputs";
+@import "buttons";
+@import "breakpoints";
+
+
+body{
+    border-top: 0.7142857142857143em solid #2ecc71;
+}
