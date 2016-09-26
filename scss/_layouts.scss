@@ -5,9 +5,17 @@
 }
 .layout-card{
     background: $light-background-color;
-    margin:10px;
+    height: 430px;
+    text-align: center;
+    position:relative;
+}
+.layout-card--ad{
+    background: $light-background-color;
+    
+}
+.layout-padded{
+    padding:10px;
 }
 .layout-dark-background{
     background: $dark-background-color;
 }
-
