@@ -4,15 +4,64 @@
 
 }
 .nav-item, .list-item{
-    text-transform: uppercase;
-    font-size: em(14);
+   
 }
+
 .nav-item{
     padding: em(38) 0;
     color: $dark-font-color;
     margin: 0 em(20);
 }
-.nav-item--selected, .nav-item:hover{
-    color: $primary-color;
+
+.nav-item--selected, .nav-item:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+     color: $primary-color;
     border-bottom: em(5) solid $primary-color;
+
+ 	
+}
+
+.navbar-default .navbar-nav>li>a {	
+	padding: 40px 0;
+    margin: 0px 20px;
+     text-transform: uppercase;
+    font-size: em(14);
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+     color: $primary-color;
+    border-bottom: em(5) solid $primary-color;
+}
+
+ .navbar-default {
+	background-color: $light-background-color;
+	border-color: transparent;
+}
+
+
+.navbar-brand {
+	height: initial; 
+	padding: em(20); 
+	line-height: 1; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-color: $main-background-color;
+    height: em(90);
+    font-family: "Din"
 }
