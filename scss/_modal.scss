@@ -9,3 +9,18 @@
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.9);
 }
+.filter-button-finish{
+    background-image: url(../images/filter-button-finish.png);
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    width: 62px;
+    height: 62px;
+    top: 50%;
+    left: calc(50% - 32px);
+    z-index: 1000000000;
+    position: relative;
+}
