@@ -5,10 +5,10 @@
 }
 
 .title-main{
-   background-image: url(../images/footwear-back-line.png);
+    background-image: url(../images/footwear-back-line.png);
     background-repeat:no-repeat;
-    
-   font-family: "Din";
+    background-position: center;
+    font-family: $text-secondary-font;
     position: 0 0;
     font-size: em(45);
     text-transform: uppercase;
@@ -32,4 +32,12 @@
     left: calc(50% - 32px);
     z-index: 1;
     position: absolute;
+}
+
+.title-order{
+    text-transform: uppercase;
+    margin-right: em(20);
+    span{
+      margin-left: em(20);
+    }
 }
