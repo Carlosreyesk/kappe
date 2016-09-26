@@ -1,14 +1,8 @@
-// Option lists
-
-footer
-{
-    background-color: $dark-background-color;
-}
-
 // LEFT SIDE OF THE FOOTER
 
 .footer-left{
     padding-top: em(40);
+    margin-bottom: em(60);
 }
 
 .list{
@@ -44,16 +38,26 @@ footer
 .social{
     padding: 0;
     margin-top: em(35);
+    margin-bottom: em(135);
 }
 
-
 .social-items{
-    // margin-left: em(5);
-    margin-right: em(5);
+    margin-right: em(10);
     display: inline-block;
     padding-left: 11px;
     list-style: none;
     border: 1px solid $main-font-color;
     height: em(50);
     width: em(50);
+    float: left;
+}
+
+
+.suscribe-border{
+    padding-bottom: em(15);
+    border-bottom: 2px solid $main-font-color;
+}
+
+.credits{
+    margin-bottom: em(35);
 }

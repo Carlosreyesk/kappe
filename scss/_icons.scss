@@ -1,5 +1,6 @@
 
 
+
 .sprite-icon{
 	margin-right: 1px;
     display: inline-flex;
@@ -15,7 +16,9 @@
 .sprite-icon-search {
     background-position: -3px -1px ;
     }
-.sprite-icon-search:hover {
+
+a:hover .sprite-icon-search , .sprite-icon-search:hover {
+
     background-position: -3px -19px ;
     transition: background-position 0.5s;
     }
@@ -25,14 +28,18 @@
 .sprite-icon-shopingbag--variant {
     background-position: -23px -34px ;
     }
-.sprite-icon-shopingbag:hover {
+
+a:hover .sprite-icon-shopingbag , .sprite-icon-shopingbag:hover  {
+
     background-position: -23px -18px ;
     transition: background-position 0.5s;
     }
 .sprite-icon-singin {
     background-position: -42px -0px ;
     }
-.sprite-icon-singin:hover {
+
+a:hover .sprite-icon-singin, .sprite-icon-singin:hover {
+
     background-position: -42px -18px ;
     transition: background-position 0.5s;
     }
@@ -44,24 +51,39 @@
     width: 27px;
     height: 31px;
     background-position: -113px 0px;
+		top: em(7);
+		left: em(1);
     }
 .sprite-icon-instagram {
     width: 25px;
     height: 25px;
     background-position: -137px 2px;
+		top: em(12);
+		left: em(2);
     }
 .sprite-icon-twitter {
     width: 25px;
     height: 25px;
     background-position: -158px 2px;
+		top: em(12);
     }
 .sprite-icon-facebook {
     width: 25px;
     height: 25px;
     background-position: -178px 2px;
+		top: em(12);
     }
 .sprite-icon-pinterest {
     width: 25px;
     height: 25px;
     background-position: -195px 0px;
+		top: em(15);
     }
+
+.sprite-icon-suscribe {
+	    width: 25px;
+	    height: 25px;
+	    background-position: -85px 0px;
+			position: relative;
+			top: em(10);
+	}
