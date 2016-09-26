@@ -1,10 +1,35 @@
 // Content title
 
+.title-container{
+    text-align: center;
+}
+
 .title-main{
-    background: $sprite-map;
+   background-image: url(../images/footwear-back-line.png);
+    background-repeat:no-repeat;
+    
+   font-family: "Din";
     position: 0 0;
+    font-size: em(45);
+    text-transform: uppercase;
 }
 .title-detail{
     color: $primary-color;
     font-size: em(14);
+}
+
+.filter-button{
+    background-image: url(../images/filter-button.png);
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 62px;
+    height: 62px;
+    top: 705px;
+    left: calc(50% - 32px);
+    z-index: 1;
+    position: absolute;
 }
