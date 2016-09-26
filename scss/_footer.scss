@@ -1,15 +1,38 @@
 // Option lists
 
-.list{
+footer
+{
+    background-color: $dark-background-color;
+}
+
+.footer-left{
+    padding-top: em(40);
 
 }
+
+.list{
+    display: inline-block;
+    float: left;
+}
+
 .list-items{
+    font-family: 'Din';
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    margin: em(15) em(135) 0 0;
+}
+
+.list-items a{
     color: $main-font-color;
-    margin: em(16) 0;
 }
-.list:first-child{
-    margin-top:0;
+
+.list-items:first-child{
+    margin-top: 0;
+    margin-left: 0;
 }
-.list:last-child{
-    margin-bottom:0;
+
+.list-items:last-child{
+    margin-bottom: 0;
+    margin-right: 0;
 }
