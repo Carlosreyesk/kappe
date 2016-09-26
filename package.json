@@ -8,6 +8,7 @@
     "watch-css": "rm -rf public/css/main.css | nodemon -e scss -x \"npm run build-css\""
   },
   "devDependencies": {
+    "bower": "^1.7.9",
     "cssnano": "^3.7.5",
     "node-sass": "^3.10.0",
     "nodemon": "^1.10.2",
