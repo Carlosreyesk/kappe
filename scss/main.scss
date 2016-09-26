@@ -1,0 +1,19 @@
+@import "variables";
+@import "functions";
+@import "icons";
+@import "fonts";
+@import "typography";
+@import "layouts";
+@import "buttons";
+@import "header";
+@import "footer";
+@import "cards";
+@import "content-options";
+@import "sections";
+
+body { 
+  margin: 0;
+  color: $main-font-color;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
+}

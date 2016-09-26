@@ -1,0 +1,18 @@
+// Navbar navegation
+
+.nav{
+
+}
+.nav-item, .list-item{
+    text-transform: uppercase;
+    font-size: em(14);
+}
+.nav-item{
+    padding: em(38) 0;
+    color: $dark-font-color;
+    margin: 0 em(20);
+}
+.nav-item--selected, .nav-item:hover{
+    color: $primary-color;
+    border-bottom: em(5) solid $primary-color;
+}
