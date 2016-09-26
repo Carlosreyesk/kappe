@@ -10,6 +10,10 @@
 .card-content--split{
     margin: auto 0;
 }
+.card-content--left{
+    position: relative;
+    text-align: left;
+}
 .card-header{
     position:absolute;
     top: 0;
@@ -19,7 +23,6 @@
 .card-title{
     font-family: $text-secondary-font;
     text-transform: uppercase;
-    font-weight: 500;
 }
 .card-subtitle{
     font-family: $text-primary-font;
@@ -35,8 +38,14 @@
     font-family: $text-secondary-font;
     background-color: $primary-color;
 }
+.card-container{
+    height: 100%;
+}
 .card-badge--secondary{
     background-color: $secondary-color;
+}
+.card-badge--card-left{
+    margin-bottom: em(75);
 }
 .card-detail{
     font-family: $text-secondary-font;
@@ -45,4 +54,11 @@
     color: $danger-color;
     text-decoration: line-through;
     margin-left: em(5);
+}
+.card-badge--nav{
+    margin: 0 em(50);
+}
+.card-img--center{
+    top: calc(50% - 125px);
+    position: relative;
 }

@@ -9,42 +9,42 @@
 <body>
   <div class="layout-light-background container-fluid">
     <!-- Fluid header menu -->
-		<header class="">
+    <header class="">
       <div class="row">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar "></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="public/images/brand.jpg"></a>
+              <a class="navbar-brand" href="#"><img src="public/images/brand.jpg"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Footwear</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Clearance</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="sprite-icon sprite-icon-search"></span> Search</a></li>
+                <li><a href="#"><span class="sprite-icon sprite-icon-shopingbag"></span> Cart</a></li>
+                <li><a href="#"><span class="sprite-icon sprite-icon-singin"></span> Sign In</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Footwear</a></li>
-              <li><a href="#">Clothing</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Brands</a></li>
-              <li><a href="#">Clearance</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="sprite-icon sprite-icon-search"></span> Search</a></li>
-              <li><a href="#"><span class="sprite-icon sprite-icon-shopingbag"></span> Cart</a></li>
-              <li><a href="#"><span class="sprite-icon sprite-icon-singin"></span> Sign In</a></li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
+          <!-- /.container-fluid -->
+        </nav>
       </div>
-		</header>
+    </header>
 
     <!-- Main content of the page: FOOTWEAR -->
     <main class="container">
@@ -60,7 +60,7 @@
           <div class="layout-card">
             <div class="card-content">
               <img class="card-img img-responsive" src="public/images/shoes/img-shoe-1.jpg" alt="">
-              <h3 class="card-title" >Supreme x Nike SB</h3>
+              <h3 class="card-title">Supreme x Nike SB</h3>
               <h4 class="card-subtitle">Tennis Classic</h4>
               <h3 class="card-detail">$120.00 <span class="card-detail--danger"> $160.00 </span></h3>
             </div>
@@ -91,21 +91,21 @@
         </div>
         <div class="col-md-6 layout-padded">
           <div class="layout-card">
-            <div class="card-header">
-              <span class="badge card-badge card-badge--secondary">News</span>
+            <div class="col-md-6 card-container">
+              <img class="card-img card-img--center img-responsive" src="public/images/shoes/img-shoe-4.jpg" alt="" class="floated-left">
             </div>
-            <div class="card-content card-content--split">
-              <div class="col-md-6">
-                <img class="card-img img-responsive" src="public/images/shoes/img-shoe-4.jpg" alt="" class="floated-left">
-              </div>
-              <div class="col-md-6">
-                <h3 class="card-title">Nike X Supreme</h3>
-              <h4 class="card-subtitle">Air Force One</h4>
-              <p>
-                Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue
-                in leather with perforation.
-              </p>
-              <h3 class="card-detail">$205.00</h3>
+            <div class="col-md-6 card-container">
+              <div class="card-content--left">
+                <div class="card-header">
+                  <span class="badge card-badge card-badge--secondary card-badge--card-left">News</span>
+                  <h3 class="card-title">Nike X Supreme</h3>
+                  <h4 class="card-subtitle">Air Force One</h4>
+                  <p>
+                    Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue
+                    in leather with perforation.
+                  </p>
+                  <h3 class="card-detail">$205.00</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -113,7 +113,8 @@
         <div class="col-md-3 layout-padded">
           <div class="layout-card">
             <div class="card-header">
-              <span class="fa fa-heart"></span><span class="badge card-badge">Exclusive</span><span class="shopping-bag"></span>
+              <span class="sprite-icon sprite-icon-heart"></span><span class="badge card-badge card-badge--nav">Exclusive</span>
+              <span class="sprite-icon sprite-icon-shopingbag--variant"></span>
             </div>
             <div class="card-content">
               <img class="card-img img-responsive" src="public/images/shoes/img-shoe-5.jpg" alt="">
@@ -182,7 +183,7 @@
               <img class="card-img img-responsive" src="public/images/shoes/img-shoe-11.jpg" alt="">
               <h3 class="card-title">Converse x Comme des Garçons</h3>
               <h4 class="card-subtitle">Black Heart Logo</h4>
-              <h3  class="card-detail">$105.00</h3>
+              <h3 class="card-detail">$105.00</h3>
             </div>
           </div>
         </div>
@@ -194,69 +195,74 @@
         </div>
         <div class="col-md-6 layout-padded">
           <div class="layout-card">
-            <div class="card-header">
-              <span class="badge card-badge card-badge--secondary">News</span>
+            <div class="col-md-6 card-container">
+              <img class="card-img card-img--center img-responsive" src="public/images/shoes/img-shoe-12.jpg" alt="" class="floated-left">
             </div>
-            <div class="card-content">
-              <img class="card-img img-responsive" src="public/images/shoes/img-shoe-12.jpg" alt="" class="floated-left">
-              <h3 class="card-title">Nike</h3>
-              <h4 class="card-subtitle">Lunar force 1 sp acronym white</h4>
-              <p>
-                Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue
-                in leather with perforation.
-              </p>
-              <h3 class="card-detail">$300.00</h3>
+            <div class="col-md-6 card-container">
+              <div class="card-content--left">
+                <div class="card-header">
+                  <span class="badge card-badge card-badge--secondary card-badge--card-left">News</span>
+                  <h3 class="card-title">Nike</h3>
+
+                  <h4 class="card-subtitle">Lunar force 1 sp acronym white</h4>
+                  <p>
+                    Sneakers from Nike Sportswear. Made in collaboration with Acronym. Upper in suede. Flat laces. Outer side zip closure. Tongue
+                    in leather with perforation.
+                  </p>
+                  <h3 class="card-detail">$300.00</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </main>
 
 
-		<footer class="row">
-        <div class="row">
-          <div class="col-md-9 footer-left">
-							<a class="list" href="#"> <img src="public/images/brand.jpg" alt="" /> </a>
-              <ul class="list">
-                <li class="list-items"><a href="">Footwear</a></li>
-                <li class="list-items"><a href="">Clothing</a></li>
-                <li class="list-items"><a href="">Accessories</a></li>
-                <li class="list-items"><a href="">Brands</a></li>
-                <li class="list-items"><a href="">Clearance</a></li>
-              </ul>
-              <ul class="list">
-                <li class="list-items"><a href="">About</a></li>
-                <li class="list-items"><a href="">Contact us</a></li>
-                <li class="list-items"><a href="">Support</a></li>
-                <li class="list-items"><a href="">Store Locator</a></li>
-                <li class="list-items"><a href="">Press Room</a></li>
-              </ul>
-              <ul class="list">
-                <li class="list-items"><a href="">Website Terms</a></li>
-                <li class="list-items"><a href="">Select Country</a></li>
-                <li class="list-items"><a href="">Source Code</a></li>
-              </ul>
-          </div>
-          <div class="col-md-3">
-            <ul class="social">
-              <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-youtube"></span></a></li>
-              <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-instagram"></span></a></li>
-              <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-twitter"></span></a></li>
-              <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-facebook"></span></a></li>
-              <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-pinterest"></span></a></li>
-            </ul>
-						<span class="suscribe"></span>
-						<h4>Suscribe our newsletter...</h4>
-          </div>
-				</div>
-				<div class="row">
-					<p>Copyright © 2015 Bree Orthonormai. All rights reserved.</p>
-				</div>
+    <footer class="row">
+      <div class="row">
+        <div class="col-md-9 footer-left">
+          <a class="list" href="#"> <img src="public/images/brand.jpg" alt="" /> </a>
+          <ul class="list">
+            <li class="list-items"><a href="">Footwear</a></li>
+            <li class="list-items"><a href="">Clothing</a></li>
+            <li class="list-items"><a href="">Accessories</a></li>
+            <li class="list-items"><a href="">Brands</a></li>
+            <li class="list-items"><a href="">Clearance</a></li>
+          </ul>
+          <ul class="list">
+            <li class="list-items"><a href="">About</a></li>
+            <li class="list-items"><a href="">Contact us</a></li>
+            <li class="list-items"><a href="">Support</a></li>
+            <li class="list-items"><a href="">Store Locator</a></li>
+            <li class="list-items"><a href="">Press Room</a></li>
+          </ul>
+          <ul class="list">
+            <li class="list-items"><a href="">Website Terms</a></li>
+            <li class="list-items"><a href="">Select Country</a></li>
+            <li class="list-items"><a href="">Source Code</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="social">
+            <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-youtube"></span></a></li>
+            <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-instagram"></span></a></li>
+            <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-twitter"></span></a></li>
+            <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-facebook"></span></a></li>
+            <li class="social-items"><a href=""><span class="sprite-icon sprite-icon-pinterest"></span></a></li>
+          </ul>
+          <span class="suscribe"></span>
+          <h4>Suscribe our newsletter...</h4>
+        </div>
+      </div>
+      <div class="row">
+        <p>Copyright © 2015 Bree Orthonormai. All rights reserved.</p>
+      </div>
     </footer>
 
-	</div> <!-- End container fuid master -->
-	<script src="public/js/jquery-3.1.0.min.js"></script>
-	<script src="public/js/bootstrap.min.js"></script>
+    </div>
+    <!-- End container fuid master -->
+    <script src="public/js/jquery-3.1.0.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
 </body>
 
 </html>
