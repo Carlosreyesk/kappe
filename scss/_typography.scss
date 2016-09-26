@@ -5,10 +5,14 @@ h1{
 h2{
     font-size: em(55);
     color: $light-font-color;
+    font-family: $text-secondary-font;
+    font-weight: 500;
+    letter-spacing: em(1);
 }
 h3{
     font-size: em(18);
     color: $dark-font-color;
+    letter-spacing: em(1);
 }
 p{
     font-size: em(12);
