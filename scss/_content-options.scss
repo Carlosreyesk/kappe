@@ -5,16 +5,24 @@
 }
 
 .title-main{
-   background-image: url(../images/footwear-back-line.png);
-    background-repeat:no-repeat; 
-   font-family: "DinCond";
+    background-image: url(../images/footwear-back-line.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    font-family: $text-secondary-font;
     position: 0 0;
     font-size: em(45);
     text-transform: uppercase;
+    margin-bottom: 0;
+    max-height: em(50);
 }
 .title-detail{
     color: $primary-color;
-    font-size: em(14);
+    font-size: em(10);
+    display: inline-block;
+    position: relative;
+    left: em(90);
+    margin-top: 0px;
+    text-transform: uppercase;
 }
 
 .filter-button{
@@ -31,4 +39,16 @@
     left: calc(50% - 32px);
     z-index: 1;
     position: absolute;
+}
+
+.title-order{
+    text-transform: uppercase;
+    margin-right: em(20);
+    display: inline-block;
+    span{
+      margin-left: em(20);
+    }
+    margin-bottom: em(40);
+    position: relative;
+    margin-top: 0px;
 }
