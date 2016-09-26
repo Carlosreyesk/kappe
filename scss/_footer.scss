@@ -5,9 +5,10 @@ footer
     background-color: $dark-background-color;
 }
 
+// LEFT SIDE OF THE FOOTER
+
 .footer-left{
     padding-top: em(40);
-
 }
 
 .list{
@@ -17,6 +18,7 @@ footer
 
 .list-items{
     font-family: 'Din';
+    font-size: em(14);
     text-transform: uppercase;
     text-decoration: none;
     list-style: none;
@@ -35,4 +37,23 @@ footer
 .list-items:last-child{
     margin-bottom: 0;
     margin-right: 0;
+}
+
+// RIGHT SIDE OF THE FOOTER
+
+.social{
+    padding: 0;
+    margin-top: em(35);
+}
+
+
+.social-items{
+    // margin-left: em(5);
+    margin-right: em(5);
+    display: inline-block;
+    padding-left: 11px;
+    list-style: none;
+    border: 1px solid $main-font-color;
+    height: em(50);
+    width: em(50);
 }
