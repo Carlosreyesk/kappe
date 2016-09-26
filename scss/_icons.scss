@@ -1,5 +1,6 @@
 
 
+
 .sprite-icon{
 	margin-right: 1px;
     display: inline-flex;
@@ -15,7 +16,7 @@
 .sprite-icon-search {	
     background-position: -3px -1px ;
     }
-.sprite-icon-search:hover {	
+a:hover .sprite-icon-search , .sprite-icon-search:hover {	
     background-position: -3px -19px ;
     transition: background-position 0.5s;
     }
@@ -25,14 +26,14 @@
 .sprite-icon-shopingbag--variant {	
     background-position: -23px -34px ;
     }
-.sprite-icon-shopingbag:hover {	
+a:hover .sprite-icon-shopingbag , .sprite-icon-shopingbag:hover  {	
     background-position: -23px -18px ;
     transition: background-position 0.5s;
     }
 .sprite-icon-singin {	
     background-position: -42px -0px ;
     }
-.sprite-icon-singin:hover {	
+a:hover .sprite-icon-singin, .sprite-icon-singin:hover {	
     background-position: -42px -18px ;
     transition: background-position 0.5s;
     }

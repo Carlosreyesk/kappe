@@ -1,11 +1,5 @@
 // Navbar navegation
 
-.nav{
-
-}
-.nav-item, .list-item{
-
-}
 
 .nav-item{
     padding: em(38) 0;
@@ -17,13 +11,13 @@
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-     color: $primary-color;
+    color: $primary-color;
     border-bottom: em(5) solid $primary-color;
 
-
+ 	
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {	
 	padding: 40px 0;
     margin: 0px 20px;
      text-transform: uppercase;
@@ -39,11 +33,10 @@
 	border-color: transparent;
 }
 
-
 .navbar-brand {
-	height: initial;
-	padding: em(20);
-	line-height: 1;
+	height: initial; 
+	padding: em(20); 
+	line-height: 1; 
 }
 
 
