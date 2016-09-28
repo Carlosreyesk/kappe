@@ -1,0 +1,25 @@
+.list--filter .list-items{
+    font-family: $text-secondary-font;
+    font-size: em(14);
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    margin: em(8) 0;
+}
+
+.list-items a{
+    color: $main-font-color;
+}
+
+.list-items:first-child{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.list-items:last-child{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.filter{
+    margin-top: em(75);
+}
