@@ -53,6 +53,7 @@
             text-align: center;
             width: 30px;
         }
+        
         .selected--size{
             &hover{
                 color: $dark-font-color;
@@ -64,6 +65,7 @@
         color: $dark-font-color;
         background: $light-background-color;
     }
+    
     .list__items.selected--color:after{
         content: '✓';
         color: #fff;
