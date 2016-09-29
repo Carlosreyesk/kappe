@@ -1,20 +1,20 @@
-.list--filter .list-items{
+.list--filter .list__items{
     font-size: em(18);
     margin: em(8) 0;
 }
 .list--filter{
      padding-left: 0;
 }
-.list-items a{
+.list__items a{
     color: $main-font-color;
 }
 
-.list-items:first-child{
+.list__items:first-child{
     margin-top: 0;
     margin-left: 0;
 }
 
-.list-items:last-child{
+.list__items:last-child{
     margin-bottom: 0;
     margin-right: 0;
 }
@@ -27,7 +27,7 @@
 }
 .list--boxes{
     padding-left: 0px;
-    .list-items{
+    .list__items{
         float: left;
         margin: 0 10px 10px 0;
         text-align: center;
@@ -49,11 +49,11 @@
             }
         }
     }
-    .list-items.selected--size{
+    .list__items.selected--size{
         color: $dark-font-color;
         background: $light-background-color;
     }
-    .list-items.selected--color:after{
+    .list__items.selected--color:after{
         content: '✓';
         color: #fff;
         font-size: em(18);
@@ -65,43 +65,43 @@
 }
 
 
-.list-items--pink{
+.list__items--pink{
     background: $filter-selector-color-pink;
 }
 
-.list-items--purple{
+.list__items--purple{
     background: $filter-selector-color-purple;
 }
 
-.list-items--blue{
+.list__items--blue{
     background: $filter-selector-color-blue;
 }
 
-.list-items--yellow{
+.list__items--yellow{
     background: $filter-selector-color-yellow;
 }
 
-.list-items--orange{
+.list__items--orange{
     background: $filter-selector-color-orange;
 }
 
-.list-items--brown{
+.list__items--brown{
     background: $filter-selector-color-brown;
 }
 
-.list-items--red{
+.list__items--red{
     background: $filter-selector-color-red;
 }
 
-.list-items--grey{
+.list__items--grey{
     background: $filter-selector-color-grey;
 }
 
-.list-items--white{
+.list__items--white{
     background: $filter-selector-color-white;
 }
 
-.list-items--black{
+.list__items--black{
     background: $filter-selector-color-black;
 }
 
