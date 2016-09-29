@@ -14,10 +14,15 @@ h3{
     color: $dark-font-color;
     letter-spacing: em(1);
 }
+h5{
+    font-family: $text-secondary-font;
+    font-size: em(14);
+}
 h6{
     font-size: em(10);
     color: $dark-font-color;
 }
 p{
     font-size: em(12);
+    line-height: 1.8;
 }

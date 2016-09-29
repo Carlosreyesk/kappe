@@ -35,10 +35,19 @@
     outline:none;
     width: 62px;
     height: 62px;
-    top: 705px;
+    top: em(670);
     left: calc(50% - 32px);
     z-index: 1;
     position: absolute;
+}
+
+@media(max-width:992px){
+    .filter-button{
+        top: 85%;
+        left: 92%;
+        position: fixed;
+    }
+    
 }
 
 .title-order{
@@ -51,4 +60,10 @@
     margin-bottom: em(40);
     position: relative;
     margin-top: 0px;
+}
+
+.title-order:hover{
+    color: $primary-color;
+    cursor: pointer;
+
 }
