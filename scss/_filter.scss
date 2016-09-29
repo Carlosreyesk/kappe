@@ -21,6 +21,17 @@
 .filter{
     margin-top: em(75);
 }
+.list--filter .list__items.selected, .list--filter .list__items:hover{
+    list-style: square url('../images/square.jpg');
+    margin-left: em(15);
+    a{
+        color:white;
+        text-decoration: none;
+        top: em(3);
+        position:relative;
+    }
+
+}
 .list-title{
     color: $light-font-color;
     text-transform: uppercase;
