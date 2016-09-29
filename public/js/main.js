@@ -4,13 +4,14 @@ $(document).ready(function(){
     filterBtn.addEventListener('click', openFilter);
     var filterBtnFinish = document.querySelector('.js-close-filter');
     filterBtnFinish.addEventListener('click', closeFilter);
-    var modal = document.querySelector('.js-filter');
+    var modal = $('.js-filter');
+    modal.hide();
 
     function openFilter(){
-        modal.classList.remove('hidden');
+        modal.fadeIn(400);
     }
 
     function closeFilter(){
-        modal.classList.add('hidden');
+        modal.fadeOut(400);
     }
 });

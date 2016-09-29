@@ -2,7 +2,9 @@
     font-size: em(18);
     margin: em(8) 0;
 }
-
+.list--filter{
+     padding-left: 0;
+}
 .list-items a{
     color: $main-font-color;
 }
@@ -19,3 +21,91 @@
 .filter{
     margin-top: em(75);
 }
+.list-title{
+    color: $light-font-color;
+    text-transform: uppercase;
+}
+.list--boxes{
+    padding-left: 0px;
+    .list-items{
+        float: left;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+        border: 1px solid grey;
+        a{
+            position: absolute;
+            margin-top: -7px;
+            margin-left: -15px;
+            text-align: center;
+            width: 30px;
+        }
+        .selected--size{
+            &hover{
+                color: $dark-font-color;
+                background: $light-background-color;
+            }
+        }
+    }
+    .list-items.selected--size{
+        color: $dark-font-color;
+        background: $light-background-color;
+    }
+    .list-items.selected--color:after{
+        content: '✓';
+        color: #fff;
+        font-size: em(18);
+        position:absolute;
+        margin-top: em(-11);
+        margin-left: em(-7);
+
+    }
+}
+
+
+.list-items--pink{
+    background: $filter-selector-color-pink;
+}
+
+.list-items--purple{
+    background: $filter-selector-color-purple;
+}
+
+.list-items--blue{
+    background: $filter-selector-color-blue;
+}
+
+.list-items--yellow{
+    background: $filter-selector-color-yellow;
+}
+
+.list-items--orange{
+    background: $filter-selector-color-orange;
+}
+
+.list-items--brown{
+    background: $filter-selector-color-brown;
+}
+
+.list-items--red{
+    background: $filter-selector-color-red;
+}
+
+.list-items--grey{
+    background: $filter-selector-color-grey;
+}
+
+.list-items--white{
+    background: $filter-selector-color-white;
+}
+
+.list-items--black{
+    background: $filter-selector-color-black;
+}
+
+
+
+
+
