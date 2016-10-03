@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var routes = require('./api/routes/index');   
+var routes = require('./routes/index');
 var mongoose     = require('mongoose');
 var morgan = require('morgan');
-var Card     = require('./api/models/shoe');
+var Card     = require('./models/shoe');
 
 mongoose.connect('localhost:27017/footwear');
 
