@@ -5,9 +5,8 @@ function find(req, res){
     Shoe.find({ deleted: false }, function(err, todos) {
         if (err)
             res.send(err);
-        
         res.json(todos);
-    }); 
+    });
 }
 
 // function create(req, res){
