@@ -17,22 +17,22 @@
                     info: false,
                     content: '',
                     important: false,
-                    badge: 'News',
-                    badgecolor: 'green',
+                    badge: '',
+                    badgecolor: 's',
                     menu:false,
                     deleted:false
             },{
                     img: 'public/images/shoes/img-shoe-2.jpg',
-                    title: 'Kris van assche',
-                    subtitle: 'nike',
+                    title: 'Raf Simons X Adidas ',
+                    subtitle: 'Mid-Platform Light Up',
                     price: '$760.00',
                     sale: false,
                     ogprice: '',
                     info: false,
-                    content: 'ass',
+                    content: 's',
                     important: true,
-                    badge: '',
-                    badgecolor: '',
+                    badge: 'News',
+                    badgecolor: 'green',
                      menu:false,
                     deleted:false
             },{
@@ -73,7 +73,7 @@
                     info: false,
                     content: '',
                     important: false,
-                    badge: 'Exclusive newss',
+                    badge: 'Exclusive',
                     badgecolor: 'blue',
                     menu:true,
                     deleted:false
