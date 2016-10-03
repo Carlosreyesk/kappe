@@ -12,7 +12,7 @@
                       price: '$120.00',
                       sale: true,
                       ogprice: '$160.00',
-                      important: true
+                      important: false
         }]
     }
 
