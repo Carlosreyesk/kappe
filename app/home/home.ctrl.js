@@ -10,12 +10,10 @@
                       title: 'Supreme x Nike SB',
                       subtitle: 'Tennis Classic',
                       price: '$120.00',
-                      sale: true,
+                      sale: false,
                       ogprice: '$160.00',
-                      info: true,
-                      content: 'blab balba baslasb bas',
-                      important: true,
-                      badge: 'News',
+                      info: false,
+                      important: false,
                       badgecolor: 'blue'
 
         }]
