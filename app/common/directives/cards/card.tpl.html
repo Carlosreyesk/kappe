@@ -1,0 +1,25 @@
+<div ng-switch="card.important">
+    <div ng-switch-when="false" class="col-md-3 col-sm-6 layout-padded">
+        <div class="layout-card">
+            <div class="card-content">
+                <img class="card-img img-responsive" src="{{ card.img }}" alt="">
+                <h3 class="card-title">{{ card.title }}</h3>
+                <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+            </div>
+        </div>
+    </div>
+    <div ng-switch-when="true" class="col-md-6 col-sm-12 layout-padded">
+        <div class="layout-card">
+            <div class="card-header">
+                <span class="badge card-badge card-badge--secondary">News</span>
+            </div>
+            <div class="card-content">
+                <img class="card-img img-responsive" src="{{ card.img }}" alt="">
+                <h3 class="card-title">{{ card.title }}</h3>
+                <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+            </div>
+        </div>
+    </div>
+</div>

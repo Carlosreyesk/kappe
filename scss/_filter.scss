@@ -30,7 +30,6 @@
         top: em(3);
         position:relative;
     }
-
 }
 .list-title{
     color: $light-font-color;
@@ -38,6 +37,7 @@
 }
 .list--boxes{
     padding-left: 0px;
+    width: 100%;
     .list__items{
         float: left;
         margin: 0 10px 10px 0;
