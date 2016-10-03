@@ -20,7 +20,7 @@
         <div ng-switch-when="false">
             <div class="layout-card">
                 <div ng-if="card.badge" class="card-header">
-                    <span class="badge card-badge card-badge--secondary">{{ card.badge }}</span>
+                    <span ng-if="card.badge" ng-class="card.badgecolor == 'green' ? 'card-badge--secondary': 'card-badge--primary'" class="badge card-badge card-badge--card-left">{{ card.badge }}</span>
                 </div>
                 <div class="card-content">
                     <img class="card-img img-responsive" src="{{ card.img }}" alt="">
