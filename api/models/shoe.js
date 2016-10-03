@@ -7,7 +7,7 @@ var Shoe   = new mongoose.Schema({
     ogprice: String,
     price: String,
     info: Boolean,
-    content: Text,
+    content: String,
     important: Boolean,
     badge: String,
     badgecolor: String,

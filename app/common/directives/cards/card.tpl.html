@@ -7,7 +7,9 @@
             <div class="col-md-6 col-sm-6 col-xs-6 card-container">
                 <div class="card-content--left">
                     <div class="card-header">
-                        <span ng-if="card.badge" ng-class="card.badgecolor == 'green' ? 'card-badge--secondary': 'card-badge--primary'" class="badge card-badge card-badge--card-left">{{ card.badge }}</span>
+                        <span ng-if="card.menu" class="sprite-icon sprite-icon-heart"></span>
+                        <span ng-if="card.badge" ng-class="card.badgecolor == 'green' ? 'card-badge--secondary': 'card-badge--primary'" ng-class="card.menu == true ? 'card-badge--nav'" class="badge card-badge card-badge--card-left">{{ card.badge }}</span>
+                        <span ng-if="card.menu" class="sprite-icon sprite-icon-shopingbag--variant"></span>
                         <h3 class="card-title">{{ card.title }}</h3>
                         <h4 class="card-subtitle">{{ card.subtitle }}</h4>
                         <p>{{ card.content }}
@@ -20,7 +22,9 @@
         <div ng-switch-when="false">
             <div class="layout-card">
                 <div ng-if="card.badge" class="card-header">
-                    <span class="badge card-badge card-badge--secondary">{{ card.badge }}</span>
+                    <span ng-if="card.menu" class="sprite-icon sprite-icon-heart"></span>
+                    <span ng-if="card.badge" class="badge card-badge card-badge--card-left ng-class:{ 'card-badge--nav' : card.menu, 'card-badge--secondary' : card.badgecolor == 'green', 'card-badge--primary' : card.badgecolor == 'blue'};" >{{ card.badge }}</span>
+                    <span ng-if="card.menu" class="sprite-icon sprite-icon-shopingbag--variant"></span>
                 </div>
                 <div class="card-content">
                     <img class="card-img img-responsive" src="{{ card.img }}" alt="">
