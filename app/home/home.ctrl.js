@@ -12,7 +12,12 @@
                       price: '$120.00',
                       sale: true,
                       ogprice: '$160.00',
-                      important: false
+                      info: true,
+                      content: 'blab balba baslasb bas',
+                      important: true,
+                      badge: 'News',
+                      badgecolor: 'blue'
+
         }]
     }
 

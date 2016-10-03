@@ -1,24 +1,33 @@
-<div ng-switch="card.important">
-    <div ng-switch-when="false" class="col-md-3 col-sm-6 layout-padded">
-        <div class="layout-card">
-            <div class="card-content">
-                <img class="card-img img-responsive" src="{{ card.img }}" alt="">
-                <h3 class="card-title">{{ card.title }}</h3>
-                <h4 class="card-subtitle">{{ card.subtitle }}</h4>
-                <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+<div ng-class="card.important ? 'col-md-6 col-sm-12' : 'col-md-3 col-sm-6'" class="layout-padded">
+    <div ng-switch="card.info" class="layout-card">
+        <div ng-switch-when="true">
+            <div class="col-md-6 col-sm-6 col-xs-6 card-container">
+                <img class="floated-left card-img card-img--center img-responsive" src="{{ card.img }}" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 card-container">
+                <div class="card-content--left">
+                    <div class="card-header">
+                        <span ng-if="card.badge" ng-class="card.badgecolor == 'green' ? 'card-badge--secondary': 'card-badge--primary'" class="badge card-badge card-badge--card-left">{{ card.badge }}</span>
+                        <h3 class="card-title">{{ card.title }}</h3>
+                        <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                        <p>{{ card.content }}
+                        </p>
+                        <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div ng-switch-when="true" class="col-md-6 col-sm-12 layout-padded">
-        <div class="layout-card">
-            <div class="card-header">
-                <span class="badge card-badge card-badge--secondary">News</span>
-            </div>
-            <div class="card-content">
-                <img class="card-img img-responsive" src="{{ card.img }}" alt="">
-                <h3 class="card-title">{{ card.title }}</h3>
-                <h4 class="card-subtitle">{{ card.subtitle }}</h4>
-                <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+        <div ng-switch-when="false">
+            <div class="layout-card">
+                <div ng-if="card.badge" class="card-header">
+                    <span class="badge card-badge card-badge--secondary">{{ card.badge }}</span>
+                </div>
+                <div class="card-content">
+                    <img class="card-img img-responsive" src="{{ card.img }}" alt="">
+                    <h3 class="card-title">{{ card.title }}</h3>
+                    <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                    <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+                </div>
             </div>
         </div>
     </div>
