@@ -7,7 +7,7 @@
     function shoeData($http){
 
         var getAllShoes = function(){
-            return $http.get('http://localhost:8080/api/shoes');
+            return $http.get('http://192.168.56.101:8080/api/shoes');
         }
 
         // var createTodo = function(todo){
