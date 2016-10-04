@@ -1,23 +1,22 @@
+
 (function(){
     'use strict';
 
     angular.module('footwear')
-    .directive('cardDirective', cardDirective);
+    .directive('footerDirective', footerDirective);
 
-    function cardDirective(){
+    function footerDirective(){
         var directive = {
             restrict: 'E',
             replace: false,
-            scope: {  card: '=' },
-            templateUrl: 'app/common/directives/cards/card.tpl.html',
+            scope: {  footer: '=' },
+            templateUrl: 'app/common/directives/footer/footer.tpl.html',
             // controller: todoController,
             // controllerAs: 'todo'
             
         }
         return directive;
 
-        function todoController(){
-            var vm = this;
-        }
+       
     }
 })();
