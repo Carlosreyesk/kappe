@@ -1,0 +1,26 @@
+        <!-- DEFAULT / MEDIUM / ADVERTISING CARDS -->
+        <div class="row title-container">
+        <h1 class="title-main">Footwear</h1>
+        <h6 class="title-detail">689 Shoes</h6>
+
+        <div class="dropdown pull-right ">
+          <h6 class="title-order dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Most Popular <span class="glyphicon glyphicon-chevron-down"></span> </h6>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">NEWEST</a></li>
+            <li><a href="#">PRICEY</a></li>
+            <li><a href="#">CHEAPEST</a></li>
+            <li><a href="#">BRAND</a></li>
+          </ul>
+        </div>
+      </div>
+        
+        <div ng-repeat="card in home.cards">
+            <card-directive card="card"></card-directive>
+            
+        </div>
+        
+ 
+   <advcard-directive ></advcard-directive>
+ 
+     
+       

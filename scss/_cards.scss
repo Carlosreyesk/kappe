@@ -1,0 +1,75 @@
+.card-img{
+    margin: 0 auto;
+}
+.card-content{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    padding-bottom: em(40);
+}
+.card-content--split{
+    margin: auto 0;
+}
+.card-content--left{
+    position: relative;
+    text-align: left;
+}
+.card-header{
+    position:absolute;
+    top: 0;
+    margin-top:em(35);
+    width:100%;
+}
+.card-title{
+    font-family: $text-secondary-font;
+    text-transform: uppercase;
+}
+.card-subtitle{
+    font-family: $text-primary-font;
+    font-weight: 300;
+    font-size: 14px;
+}
+.card-text{
+
+}
+.card-badge{
+    padding: 5px 15px 3px;
+    text-transform: uppercase;
+    font-family: $text-secondary-font;
+    background-color: $primary-color;
+    font-size: em(14);
+    letter-spacing: em(2);
+}
+.card-container{
+    height: 100%;
+}
+.card-badge--secondary{
+    background-color: $secondary-color;
+}
+.card-badge--transparent{
+    background-color: transparent;
+}
+.card-badge--card-left{
+    margin-bottom: em(75);
+}
+.card-detail{
+    font-family: $text-secondary-font;
+}
+.card-detail--danger{
+    color: $danger-color;
+    text-decoration: line-through;
+    margin-left: em(5);
+}
+.card-badge--nav{
+    margin: 0 em(50);
+}
+.card-img--center{
+    top: calc(50% - 125px);
+    position: relative;
+}
+.card--ad{
+    background: url(../images/ad-background.jpg);
+    height: 430px;
+    background-size: 100% 100%;
+    position: relative;
+}

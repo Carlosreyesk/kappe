@@ -1,0 +1,170 @@
+<html ng-app="footwear">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Brand Shoes Store</title>
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+  <div class="layout-light-background container-fluid">
+    <!-- Fluid header menu -->
+    <header-directive></header-directive>
+
+    <!-- Main content of the page: FOOTWEAR -->
+    <main class="container">
+
+      <!-- FOOTWEAR and MOST Popular  -->
+
+      <button class="filter-button js-open-filter"></button>
+      <div class="row layout-main-container" ng-view></div>
+    </main>
+    <footer-directive></footer-directive>
+  </div>
+
+
+  <div class="modal-bg js-filter">
+    <div class="container filter">
+      <div class="row layout-main-container"></div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="row">
+          <h5 class="list-title">Shoes</h5>
+          <ul class="list list--filter">
+            <li class="list__items"><a href=""> Boat Shoes</a></li>
+            <li class="list__items"><a href="">Moccasins</a></li>
+            <li class="list__items"><a href="">Boots</a></li>
+            <li class="list__items selected"><a href="">Espadrilles</a></li>
+            <li class="list__items"><a href="">Lace Ups</a></li>
+            <li class="list__items"><a href="">Loafers</a></li>
+            <li class="list__items"><a href="">Monkstraps</a></li>
+            <li class="list__items"><a href="">Sandals</a></li>
+            <li class="list__items"><a href="">Sneakers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="row">
+          <h5 class="list-title">Size</h5>
+          <ul class="list list--boxes">
+            <li class="list__items"><a href="">4</a></li>
+            <li class="list__items"><a href="">5</a></li>
+            <li class="list__items"><a href="">6</a></li>
+            <li class="list__items"><a href="">7</a></li>
+            <li class="list__items selected--size"><a href="">7.5</a></li>
+            <li class="list__items"><a href="">8</a></li>
+            <li class="list__items"><a href="">8.5</a></li>
+            <li class="list__items"><a href="">9</a></li>
+            <li class="list__items"><a href="">9.5</a></li>
+            <li class="list__items"><a href="">10</a></li>
+            <li class="list__items"><a href="">10.5</a></li>
+            <li class="list__items"><a href="">11</a></li>
+            <li class="list__items"><a href="">12</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <h5 class="list-title">Color</h5>
+          <ul class="list list--boxes">
+            <a href="">
+              <li class="list__items list__items--pink
+            selected--color"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--purple"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--blue"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--yellow"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--orange"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--brown"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--red"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--grey"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--white"></li>
+            </a>
+            <a href="">
+              <li class="list__items list__items--black"></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="row">
+          <h5 class="list-title">Brands</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-5 col-sm-6 col-xs-12">
+            <div class="row">
+              <ul class="list list--filter">
+                <li class="list__items selected"><a href=""> A.P.C.</a></li>
+                <li class="list__items"><a href="">Acne Studios</a></li>
+                <li class="list__items"><a href="">Adidas Originals</a></li>
+                <li class="list__items"><a href="">Arc'teryx Veilance</a></li>
+                <li class="list__items"><a href="">Bianca Chandôn</a></li>
+                <li class="list__items" selected><a href="">Cmmn Swdn</a></li>
+                <li class="list__items"><a href="">Comme des Garçons </a></li>
+                <li class="list__items"><a href="">Common Projects</a></li>
+                <li class="list__items selected"><a href="">Converse</a></li>
+                <li class="list__items"><a href="">Cutler and Gross</a></li>
+                <li class="list__items"><a href="">Dime</a></li>
+                <li class="list__items selected"><a href="">Engineered Garments</a></li>
+                <li class="list__items"><a href="">Eytys</a></li>
+                <li class="list__items"><a href="">Kris van assche</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-xs-12">
+            <div class="row">
+              <ul class="list list--filter">
+                <li class="list__items"><a href="">Maison Margiela</a></li>
+                <li class="list__items"><a href="">New Balance</a></li>
+                <li class="list__items selected"><a href="">Nike</a></li>
+                <li class="list__items"><a href="">Our Legacy</a></li>
+                <li class="list__items"><a href="">Proper Gang</a></li>
+                <li class="list__items selected"><a href="">Puma</a></li>
+                <li class="list__items selected"><a href="">Raf Simons</a></li>
+                <li class="list__items"><a href="">Rick Owens</a></li>
+                <li class="list__items selected"><a href="">Supreme</a></li>
+                <li class="list__items"><a href="">Vans</a></li>
+                <li class="list__items"><a href="">Visvim</a></li>
+                <li class="list__items"><a href="">Wtaps</a></li>
+                <li class="list__items"><a href="">Y-3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <button class="filter-button-finish js-close-filter"></button>
+    </div>
+  </div>
+  </div>
+  <!-- End container fuid master -->
+  <script src="public/js/jquery-3.1.0.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="public/js/main.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/home/home.ctrl.js"></script>
+  <script src="app/common/directives/cards/card.directive.js"></script>
+  <script src="app/common/directives/cards/advcard.directive.js"></script>
+  <script src="app/common/directives/header/header.directive.js"></script>
+  <script src="app/common/directives/footer/footer.directive.js"></script>
+  <script src="app/common/services/shoes.data.js"></script>
+</body>
+
+</html>

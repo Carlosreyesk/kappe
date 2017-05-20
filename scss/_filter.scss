@@ -1,0 +1,124 @@
+.list--filter .list__items{
+    font-size: em(18);
+    margin: em(8) 0;
+}
+.list--filter{
+     padding-left: 0;
+}
+.list__items a{
+    color: $main-font-color;
+}
+
+.list__items:first-child{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.list__items:last-child{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.filter{
+    margin-top: em(75);
+}
+.list--filter .list__items.selected, .list--filter .list__items:hover{
+    list-style: square url('../images/square.jpg');
+    margin-left: em(15);
+    a{
+        color:white;
+        text-decoration: none;
+        top: em(3);
+        position:relative;
+    }
+}
+.list-title{
+    color: $light-font-color;
+    text-transform: uppercase;
+}
+.list--boxes{
+    padding-left: 0px;
+    width: 100%;
+    .list__items{
+        float: left;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+        border: 1px solid grey;
+        a{
+            position: absolute;
+            margin-top: -7px;
+            margin-left: -15px;
+            text-align: center;
+            width: 30px;
+        }
+        
+        .selected--size{
+            &hover{
+                color: $dark-font-color;
+                background: $light-background-color;
+            }
+        }
+    }
+    .list__items.selected--size{
+        color: $dark-font-color;
+        background: $light-background-color;
+    }
+    
+    .list__items.selected--color:after{
+        content: '✓';
+        color: #fff;
+        font-size: em(18);
+        position:absolute;
+        margin-top: em(-11);
+        margin-left: em(-7);
+
+    }
+}
+
+
+.list__items--pink{
+    background: $filter-selector-color-pink;
+}
+
+.list__items--purple{
+    background: $filter-selector-color-purple;
+}
+
+.list__items--blue{
+    background: $filter-selector-color-blue;
+}
+
+.list__items--yellow{
+    background: $filter-selector-color-yellow;
+}
+
+.list__items--orange{
+    background: $filter-selector-color-orange;
+}
+
+.list__items--brown{
+    background: $filter-selector-color-brown;
+}
+
+.list__items--red{
+    background: $filter-selector-color-red;
+}
+
+.list__items--grey{
+    background: $filter-selector-color-grey;
+}
+
+.list__items--white{
+    background: $filter-selector-color-white;
+}
+
+.list__items--black{
+    background: $filter-selector-color-black;
+}
+
+
+
+
+

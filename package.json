@@ -1,0 +1,35 @@
+{
+  "name": "kappe",
+  "version": "1.0.0",
+  "description": "psd",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "rm -rf public/css/main.css | nodemon -e scss -x \"npm run build-css\"",
+    "watch-css-win": "rd /s /q public/css/main.css | nodemon -e scss -x \"npm run build-css\""
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "cssnano": "^3.7.5",
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2",
+    "postcss": "^5.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1",
+    "morgan": "^1.7.0",
+    "simple-server": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlosreyesk/kappe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlosreyesk/kappe/issues"
+  },
+  "homepage": "https://github.com/Carlosreyesk/kappe#readme"
+}

@@ -1,0 +1,38 @@
+<div ng-class="card.important ? 'col-md-6 col-sm-12' : 'col-md-3 col-sm-6'" class="layout-padded">
+    <div ng-switch="card.info" class="layout-card">
+        <div ng-switch-when="true">
+            <div class="col-md-6 col-sm-6 col-xs-6 card-container">
+                <img class="floated-left card-img card-img--center img-responsive" src="{{ card.img }}" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 card-container">
+                <div class="card-content--left">
+                    <div class="card-header">
+                        <span ng-if="card.menu" class="sprite-icon sprite-icon-heart"></span>
+                        <span ng-if="card.badge" ng-class="card.badgecolor == 'green' ? 'card-badge--secondary': 'card-badge--primary'" ng-class="card.menu == true ? 'card-badge--nav'" class="badge card-badge card-badge--card-left">{{ card.badge }}</span>
+                        <span ng-if="card.menu" class="sprite-icon sprite-icon-shopingbag--variant"></span>
+                        <h3 class="card-title">{{ card.title }}</h3>
+                        <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                        <p>{{ card.content }}
+                        </p>
+                        <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="false">
+            <div class="layout-card">
+                <div ng-if="card.badge" class="card-header">
+                    <span ng-if="card.menu" class="sprite-icon sprite-icon-heart"></span>
+                    <span ng-if="card.badge" class="badge card-badge card-badge--card-left ng-class:{ 'card-badge--nav' : card.menu, 'card-badge--secondary' : card.badgecolor == 'green', 'card-badge--primary' : card.badgecolor == 'blue'};" >{{ card.badge }}</span>
+                    <span ng-if="card.menu" class="sprite-icon sprite-icon-shopingbag--variant"></span>
+                </div>
+                <div class="card-content">
+                    <img class="card-img img-responsive" src="{{ card.img }}" alt="">
+                    <h3 class="card-title">{{ card.title }}</h3>
+                    <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+                    <h3 class="card-detail">{{ card.price }} <span ng-if="card.sale" class="card-detail--danger"> {{ card.ogprice }}</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

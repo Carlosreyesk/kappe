@@ -1,0 +1,83 @@
+// Content title
+
+.title-container{
+    text-align: center;
+}
+
+.title-main{
+    background-image: url(../images/footwear-back-line.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    font-family: $text-secondary-font;
+    position: 0 0;
+    font-size: em(45);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    max-height: em(50);
+}
+.title-detail{
+    color: $primary-color;
+    font-size: em(10);
+    display: inline-block;
+    position: relative;
+    left: em(90);
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.filter-button{
+    background-image: url(../images/filter-button.png);
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 62px;
+    height: 62px;
+    top: em(670);
+    left: calc(50% - 32px);
+    z-index: 1;
+    position: absolute;
+}
+
+@media(max-width:992px){
+    .filter-button{
+        top: 85%;
+        left: 92%;
+        position: fixed;
+    }
+    
+}
+
+.title-order{
+    text-transform: uppercase;
+    margin-right: em(20);
+    display: inline-block;
+    span{
+      margin-left: em(20);
+    }
+    margin-bottom: em(40);
+    position: relative;
+    margin-top: 0px;
+}
+
+.title-order:hover{
+    color: $primary-color;
+    cursor: pointer;
+
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    background-color: $main-background-color;
+     color: $primary-color;
+}
+
+.dropdown-menu > li > a {
+    padding: 3px 20px;
+    font-size: em(14);
+    color: $main-font-color;
+    font-weight: 300;
+ 
+}
